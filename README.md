@@ -1,4 +1,10 @@
 ## Description
+
+Context:
+- Using WebStorm from Windows
+- Repo is in the WSL2 directory and Docker is run from WSL2
+- Container is run with `node` user and *not* `root` user which probably causes the issue
+
 When using remote NodeJS interpreter from Docker container, `npm install` fails for this container with the following error:
 ```
 node /usr/local/lib/node_modules/npm/bin/npm-cli.js install --scripts-prepend-node-path=auto
